@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Menu">
+    <StackLayout 
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        BackgroundColor="White"
+        Orientation="Vertical">
+        <Label
+            Text="SSHome"
+             Font="50"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"></Label>
+        <Label
+            
+            Font="25"
+            Text="Smart Safe Home"
+            TextColor="Gray"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"></Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*"></RowDefinition>
+                <RowDefinition
+                    Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*"></ColumnDefinition>
+                <ColumnDefinition
+                    Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button 
+                    x:Name="ActivarAlarma"
+                    WidthRequest      ="130"
+                    HeightRequest     ="130"
+                    Clicked="ActivarAlarma_Clicked"
+                    BackgroundColor="White"
+                Grid.Row="0"
+                Grid.Column="0"/>
+            <Button
+                x:Name="Notificaciones"
+                Image="TituloNotificaciones.png"
+                WidthRequest      ="130"
+                HeightRequest     ="130"
+         
+                BackgroundColor="White"
+                Clicked="Notificaciones_Clicked"
+                Grid.Row="0"
+                Grid.Column="1"/>
+            <Button
+                    x:Name="Monitoreo"
+                    Image="TituloMonitoreo.png"
+                    WidthRequest      ="130"
+                    HeightRequest     ="130"
+                    Clicked="Monitoreo_Clicked"
+                    BackgroundColor="White"
+                Grid.Row="1"
+                Grid.Column="0"/>
+            
+            <Button 
+                    Image="salir.png"
+                    x:Name="Configuraciones"
+                    WidthRequest      ="130"
+                    HeightRequest     ="130"
+                    Clicked="Configuraciones_Clicked_1"
+                    BackgroundColor="White"
+                Grid.Row="1"
+                Grid.Column="1"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

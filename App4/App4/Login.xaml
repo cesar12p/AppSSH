@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Login">
+    <StackLayout Padding="10,30,10,10" Spacing="10">
+        <!-- Place new controls here -->
+        <Label Text="SSHome" 
+               Font="30"
+               TextColor="Blue"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Label Text="Smart Safe Home"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Label Text="Iniciar Sesion"
+               TextColor="Black"
+               Font="26"
+               HorizontalOptions="Center"
+               
+               VerticalOptions="Center"/>
+        <ActivityIndicator x:Name="WaitActivity"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+        <Image 
+               Source="login.png"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Entry x:Name="txtUser"
+               Placeholder="Ingrese Usuario"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+        <Image Source="pass.png"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Entry x:Name="txtPasw"
+               Placeholder="Ingrese Contraseña"
+               IsPassword="True"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+        <Button x:Name="btnIngresar"
+                Font="20"
+                Text="Ingresar"
+                BackgroundColor="Navy"
+                TextColor="White"
+                Clicked="BtnIngresar_Clicked"
+                />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="¿No tienes cuenta todavia?"
+               HorizontalOptions="End"
+               VerticalOptions="End"/>
+            <Label Text="Registrate"
+                   TextColor="Blue"
+                   TextDecorations="Underline"
+               HorizontalOptions="End"
+               VerticalOptions="End"
+                  x:Name="lbClick"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

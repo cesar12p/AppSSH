@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Registro">
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Registrate" 
+               Font="50"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+            <Label Text="Nombre:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtNombre"
+               Placeholder="Ingrese su Nombre"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Apellidos:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtApellidos"
+               Placeholder="Ingrese sus Apellidos"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Numero Telefonico:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtTelefono"
+                Keyboard="Telephone"
+                    Placeholder="(312)"
+                   HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Correo Electronico:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtEmail"
+               Placeholder="ejemplo@mail.com"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Nombre de Usuario:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtUsuario"
+               Placeholder="Ingrese un Usuario"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Contraseña:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtContraseña"
+               Placeholder="Ingrese una Contraseña"
+               IsPassword="True"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Direccion:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtDireccion"
+               Placeholder="Ingrese Direccion de su Casa"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+            <Label Text="Codigo Postal:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtCodigoPostal"
+                    Keyboard="Telephone"
+               Placeholder="00000"
+               IsPassword="True"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"
+                   />
+            <Label Text="Id Placa:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+            <Entry x:Name="txtIdPlaca"
+               Placeholder="Ingrese Id de su Placa"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+
+            <Button Text="Regristrarme"
+                        x:Name="btnRegistrarme"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                    Clicked="BtnIngresar_Clicked"
+                        />
+
+
+        </StackLayout>
+    </ScrollView>
+ 
+</ContentPage>

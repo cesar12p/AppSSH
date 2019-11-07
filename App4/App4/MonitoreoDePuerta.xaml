@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MonitoreoDePuerta">
+    
+        
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        BackgroundColor="White"
+        Orientation="Vertical">
+        <Label
+            Text="SSHome"
+             Font="50"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"></Label>
+        <Label
+            
+            Font="25"
+            Text="Smart Safe Home"
+            TextColor="Gray"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"></Label>
+        <Label
+                x:Name="esp"
+                Text="  "
+                FontSize="Large"
+                />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+           
+                Text="Puerta 1"
+                FontSize="Large"
+                TextColor="Black"
+                Grid.Row="0" Grid.Column="0"
+                />
+            
+            <Image
+                HorizontalOptions="End"
+                x:Name="puerta1"
+                Grid.Row="0" Grid.Column="1"
+                
+                />
+            
+            <Label
+                Text="Puerta 2"
+                Grid.Row="1" Grid.Column="0"
+                FontSize="Large"
+                TextColor="Black"
+                />
+            
+            <Image
+                x:Name="puerta2"
+                HorizontalOptions="End"
+                Grid.Row="1" Grid.Column="1"
+                />
+            
+        </Grid>
+            
+      
+
+            <Button
+                HorizontalOptions="Center"
+                x:Name="Sincronizar"
+                Clicked="Sincronizar_Clicked"
+                />
+        </StackLayout>
+    
+
+    
+</ContentPage>
